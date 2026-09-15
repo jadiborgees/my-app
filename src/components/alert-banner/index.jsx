@@ -7,20 +7,14 @@ const AlertBanner = ({ type, message }) => {
         switch (type) {
             case "alert":
                 return "triangle-exclamation"
-                break;
             case "success":
-                return "triangle-exclamation"
-                break;
+                return "check"
             case "danger":
-                return "triangle-exclamation"
-                break;
-        
+                return "exclamation"
             default:
-                return "triangle-exclamation"
-                break;
+                return "info"
         }
-    }
-    console.log(IconType())
+    }   
 
     return (
         <Container>
